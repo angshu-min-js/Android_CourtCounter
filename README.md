@@ -44,3 +44,24 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
+
+-------------------------------------------------------------------------------
+##Views: 
+- Indiviual views (rectange) make up the layout of the android screen. Basic building block of the App.
+- Types: Text View, Image View, Button
+
+###xml view:
+
+```
+<TextView
+	android:text="Welcome!"
+	android:background="@android:color/darker_gray"
+	android:layout_width="150dp" #"wrap_content" for wrapping
+	android:layout_height="75dp" 
+	android:textSize="45sp"		/> #sp for font or use 					 #android:textAppearance="?android:textAppearanceSmall"
+	 #android:textColor=""
+```					   
+
+- Density Independent Pixel (dp): 48dp recommended
+- Google.com/design/spec/style/typography
+- developer.android.com
