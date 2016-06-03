@@ -65,3 +65,63 @@ the License.
 - Density Independent Pixel (dp): 48dp recommended
 - Google.com/design/spec/style/typography
 - developer.android.com
+
+### Layouts:
+
+- viewgroups
+	- Relative Layout, Linear Layout
+
+```
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<TextView
+		android:text="Guest List"
+		android:layout_width="wrap_content" #"match_parent"
+		android:layout_height="wrap_content"  />
+
+	<TextView
+		android:text="Angshuman"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"  />
+</LinearLayout>
+```
+
+####android:layout_height="0 dp" #android:layout_weight="1"
+
+- Relative Layout
+
+```
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Happy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Birthday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="To You" />
+
+</RelativeLayout>
+```
+###android:id="@+id/<name>"
+
